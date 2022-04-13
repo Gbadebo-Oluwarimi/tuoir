@@ -12,4 +12,4 @@ const Goods = () => {
   )
 }
 
-export default G
+export default Goods

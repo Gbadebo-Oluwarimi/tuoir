@@ -1,14 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const total = 4;
   return (
     <div>
-        <a href='/'>jdk</a>
        <nav style={{
            display:'flex',
            justifyContent:'space-around',
        }}>
-           
+           <Link to='/home'>Tuoir</Link>
        
            <ul style={{
                listStyleType:'none',
