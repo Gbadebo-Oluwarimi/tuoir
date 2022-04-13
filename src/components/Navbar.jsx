@@ -8,7 +8,7 @@ const Navbar = () => {
            display:'flex',
            justifyContent:'space-around',
        }}>
-           <Link to='/home'>Tuoir</Link>
+           <Link to='/'>Tuoir</Link>
        
            <ul style={{
                listStyleType:'none',

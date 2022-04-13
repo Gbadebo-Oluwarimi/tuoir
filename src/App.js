@@ -8,7 +8,7 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-        <Route path="/home" exact>
+        <Route path='/' exact>
         <Home />
         </Route>
         <Route path="/goods">

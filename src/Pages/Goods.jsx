@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 const Goods = () => {
   return (
@@ -7,7 +6,6 @@ const Goods = () => {
       background:'#C4EEC3', width:'100%', minHeight:'100vh'
     }}>
      <Navbar/>
-     <Link to="/home">jnjjjj</Link>
     </div>
   )
 }

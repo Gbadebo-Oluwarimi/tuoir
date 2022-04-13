@@ -63,7 +63,6 @@ const Home = () => {
 
               <center><button>Create</button></center>
                </form>
-               
                </div>
             </div>
         </div>
