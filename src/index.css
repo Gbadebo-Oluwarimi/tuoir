@@ -1,13 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.Home{
+  display: flex;
+  align-items: space-between;
+}
+.list-goods{
+  background-color:#C4EEC3;
+}
+.left-content{
+  width:100%;
+  min-height:89vh;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top:80px;
+  background-color: rgba(199, 249, 198, 0.47);
+}
+.right-content{
+  width:70%;
+  min-height: vh;
+  background-color: #ffffff;
+  justify-content: center;
+  margin:50px;
+}
+.Header-text{
+  width:70%;
+  margin-top:100px;
+  font-size: 30px;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input-1, .input-2, .input-3{
+  margin-bottom:30px;
+}
+.svgs{
+  position:absolute;
+  top:-200px;
+  left:-200px;
+  width:600px;
+  z-index: 0;
+  height:600px;
+  border-radius: 300px;
+  background-color: #24b84d42;
+}
+.main-form{
+  padding:50px;
+  background-color:#fff;
+  border-radius: 6px;
+  min-height:50vh;
+}
+input{
+  border:none;
+  width:100%;
+  height:30px;
+  padding:6px;
+  font-size:20px;
+  background-color:#cdfbba4d;
+  outline:none;
+  border-radius:6px;
+}
+button{
+  border:3px solid #24B84D;
+  background-color:#fff;
+  color:#24B84D;
+  border-radius: 20px;
+  font-weight: 900;
+  padding:7px;
+  width:150px;
+
+}
+button:hover{
+  cursor: pointer;
+}
+select{
+  border:none;
+  padding:10px;
+  background-color:rgba(199, 249, 198, 0.47) ;
+  outline:none;
+  border-radius:6px;margin-right:3px;
+}
+@media screen and (max-width:800px){
+  svg{ 
+    display:none;
+  }
 }
