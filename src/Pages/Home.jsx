@@ -1,8 +1,12 @@
 import React from 'react'
 import Leftcomp from '../components/Componenthome/leftcomp'
 import { useState} from 'react'
+import { useHistory } from 'react-router-dom'
 
 const Home = () => {
+
+  const history = useHistory()
+
   const [name, setName] = useState('');
   const [currency, setCurrency] = useState('$');
   const [price, setPrice] = useState(0);
@@ -12,13 +16,18 @@ const Home = () => {
   // function to submit all goods
   const submitGoods = (e) => {
     e.preventDefault()
+    if(name === '' || price === 0 || quantity === 0){
+      alert('all fieds are required')
+      return 
+    }
     const Goods = {name,currency,price,quantity};
     fetch('http://localhost:4000/Goods', {
       method:'POST',
       headers:{'content-Type':'Application/json'},
       body:JSON.stringify(Goods)
     }).then(() => {
-      console.log('data saved to json-server')
+      console.log('data saved to json-server');
+      history.push('/goods');
     })
   }
 

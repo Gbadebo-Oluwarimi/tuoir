@@ -1,14 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import useFetch from '../hooks/useFetch';
 const Navbar = () => {
-    const total = 4;
+    const {goods} = useFetch('http://localhost:4000/Goods');
+    const total = goods.length;
+
   return (
     <div>
        <nav style={{
            display:'flex',
            justifyContent:'space-around',
        }}>
-           <Link to='/'>Tuoir</Link>
+           <Link to='/' style={{
+               fontSize:"30px",
+               textDecoration:'none',
+               color:'#24B84D'
+           }}>Tuoir</Link>
        
            <ul style={{
                listStyleType:'none',
@@ -18,6 +25,7 @@ const Navbar = () => {
                <li>Total : {total}</li>
            </ul>
        </nav>
+
     </div>
   )
 }

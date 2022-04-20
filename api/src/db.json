@@ -6,13 +6,6 @@
       "price": 500,
       "quantity": 9,
       "id": 1
-    },
-    {
-      "name": "",
-      "currency": "$",
-      "price": 0,
-      "quantity": 0,
-      "id": 2
     }
   ]
 }
